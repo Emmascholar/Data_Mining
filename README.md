@@ -1,7 +1,10 @@
 # Time_series Forecast
 From my analysis it shows that the festive period recorded much sales and there was a peak sales during 19pm and 11am. 
 ## Handling Missing Value
-### I used SimpleImputer and InterativeImputer to handle my missing data. No data was lost during the cleaning and when i try to fill it i noticed in order_date the sales personnel recorded Order Date string as a date thus making the data dirty, so i had to replace the string with a NaN value and then imputed the missing value.
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer
+from sklearn.impute import SimpleImputer
+### I used SimpleImputer and InterativeImputer to handle my missing data. No data was lost during the cleaning
 
 ### libraries used
 * Pandas
